@@ -66,3 +66,8 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+#lock {
+   width: 22px;
+   height: 22px;
+}

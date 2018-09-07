@@ -45,3 +45,8 @@ button{
 }
 #signup-btn:hover { cursor: pointer; }
 #signin-btn:hover { cursor: pointer; }
+
+/* for screens 350px or less */
+@media screen and (max-width: 350px) {
+  header h1 { display: none; }
+}

@@ -16,4 +16,4 @@ const orders = [
   },
 ];
 
-orders;
+return orders;

@@ -1,5 +1,5 @@
 const orders = [
- {
+  {
     id: 1,
     name: 'Beef-wellington burger',
     quantity: 3,

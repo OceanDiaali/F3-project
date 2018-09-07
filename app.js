@@ -1,4 +1,4 @@
-import { orders } from './db/db';
+import { orders } from './db/db.js';
 
 const express = require('express');
 const bodyParser = require('body-parser');

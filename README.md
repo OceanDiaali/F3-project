@@ -12,4 +12,7 @@ Below are features of the Fast-Food-Fast app
   * Admin can manage (i.e. add, modify and delete) fast food items
   * Admin can see a list of food items
   * Admin can accept and decline orders
-  * Admin can mark orders as completed
+  * Admin can mark orders as completed  
+## User Interface  
+ # view UI templates : https://oceandiaali.github.io/FastFood-Fast/index.html  
+

@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore .",
     "test": "mocha --ui tdd tests/test.js",
-    "start": "node_modules/.bin/nodemon ./app.js --exec babel-node -e js"
+    "start": "node_modules/.bin/nodemon ./app.js --exec babel-node --presets env index.js"
   },
   "repository": {
     "type": "git",

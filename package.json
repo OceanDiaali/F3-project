@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    // "test": "echo \"Error: no test specified\" && exit 1",}
+     "test": "mocha",
     "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
   },
   "repository": {

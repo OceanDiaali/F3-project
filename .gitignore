@@ -1,2 +1,0 @@
-node_modules/
-"pretest": "eslint --ignore-path .gitignore .",

@@ -14,7 +14,7 @@ app.get('/api/v1/orders', (req, res) => {
   res.status(200).send({
     success: 'true',
     message: 'successfully got all the orders',
-    orders: db,
+    orders,
   });
 });
 const PORT = 5000;
@@ -38,11 +38,11 @@ app.post('/api/v1/orders', (req, res) => {
     });
   }
   const order = {
-    id: db.length + 1,
+    id: orders.length + 1,
     name: req.body.name,
     quantity: req.body.quantity,
   };
-  db.push(order);
+  orders.push(order);
   return res.status(201).send({
     success: 'true',
     message: 'order added successfully',
@@ -53,7 +53,7 @@ app.post('/api/v1/orders', (req, res) => {
 // get a single order with :GET
 app.get('/api/v1/orders/:id', (req, res) => {
   const id = parseInt(req.params.id, 10);
-  db.map((order) => {
+  orders.map((order) => {
     if (order.id === id) {
       return res.status(200).send({
         success: 'true',
@@ -74,7 +74,7 @@ app.put('/api/v1/orders/:id', (req, res) => {
   const id = parseInt(req.params.id, 10);
   let orderFound;
   let itemIndex;
-  db.map((order, index) => {
+  orders.map((order, index) => {
     if (order.id === id) {
       orderFound = order;
       itemIndex = index;
@@ -108,7 +108,7 @@ app.put('/api/v1/orders/:id', (req, res) => {
     quantity: req.body.quantity || orderFound.quantity,
   };
 
-  db.splice(itemIndex, 1, updatedOrder);
+  orders.splice(itemIndex, 1, updatedOrder);
 
   return res.status(201).send({
     success: 'true',

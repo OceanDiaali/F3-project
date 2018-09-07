@@ -111,7 +111,7 @@ app.put('/api/v1/orders/:id', (req, res) => {
 
   return res.status(201).send({
     success: 'true',
-    message: 'order added successfully',
+    message: 'order updated successfully',
     updatedOrder,
   });
 });

@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const db = require('./db/db');
+import db from './db/db';
 
 // Set up the express app
 const app = express();

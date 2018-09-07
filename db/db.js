@@ -16,4 +16,4 @@ const orders = [
   },
 ];
 
-export default orders;
+orders;

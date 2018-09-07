@@ -1,5 +1,5 @@
-const orders = [
-  {
+// const orders = [
+[{
     id: 1,
     name: 'Beef-wellington burger',
     quantity: 3,
@@ -16,4 +16,4 @@ const orders = [
   },
 ];
 
-return orders;
+// export default orders;

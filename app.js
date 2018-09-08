@@ -80,6 +80,7 @@ app.put('/api/v1/orders/:id', (req, res) => {
       orderFound = order;
       itemIndex = index;
     }
+    return true;
   });
 
   if (!orderFound) {

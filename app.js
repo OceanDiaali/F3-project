@@ -1,6 +1,7 @@
+import db from './db/db';
+
 const express = require('express');
 const bodyParser = require('body-parser');
-const db = require('./db/db');
 
 // Set up the express app
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 // get all orders
 app.get('/api/v1/orders', (req, res) => {
   res.status(200).send({
@@ -78,7 +80,6 @@ app.put('/api/v1/orders/:id', (req, res) => {
       orderFound = order;
       itemIndex = index;
     }
-    return true;
   });
 
   if (!orderFound) {
@@ -111,7 +112,7 @@ app.put('/api/v1/orders/:id', (req, res) => {
 
   return res.status(201).send({
     success: 'true',
-    message: 'order updated successfully',
+    message: `order number ${id} updated..`,
     updatedOrder,
   });
 });

@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore .",
-    "test": "mocha tests/test.js",
-    "start": "nodemon app.js --exec babel-node --"
+    "test": "node_modules/.bin/mocha tests/test.js",
+    "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
   },
   "repository": {
     "type": "git",

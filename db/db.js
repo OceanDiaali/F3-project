@@ -1,4 +1,4 @@
-const orders = [
+/* const orders = [
   {
     id: 1,
     name: 'Buhari beef-burger',
@@ -6,4 +6,4 @@ const orders = [
   },
 ];
 
-export default orders;
+// export default orders; */

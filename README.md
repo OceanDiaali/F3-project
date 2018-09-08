@@ -1,6 +1,6 @@
 # F3-project
 #Fast Food Fast app for Andela Bootcamp  
-[![Build Status](https://travis-ci.com/OceanDiaali/FastFood-Fast.svg?branch=master)](https://travis-ci.com/OceanDiaali/FastFood-Fast) [![Coverage Status](https://coveralls.io/repos/github/OceanDiaali/FastFood-Fast/badge.svg?branch=master)](https://coveralls.io/github/OceanDiaali/FastFood-Fast?branch=master)   
+[![Build Status](https://travis-ci.com/OceanDiaali/FastFood-Fast.svg?branch=master)](https://travis-ci.com/OceanDiaali/FastFood-Fast) [![Coverage Status](https://coveralls.io/repos/github/OceanDiaali/FastFood-Fast/badge.svg?branch=master)](https://coveralls.io/github/OceanDiaali/FastFood-Fast?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/4aa594ea8680e57fe87d/maintainability)](https://codeclimate.com/github/OceanDiaali/FastFood-Fast/maintainability)  
 
 ## Application description
  Fast-Food-Fast​ is a food delivery service app for a restaurant.

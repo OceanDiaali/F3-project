@@ -1,6 +1,8 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import db from './db/db';
+// import db from './db/db';
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const db = require('./db/order');
 
 // Set up the express app
 const app = express();
@@ -8,6 +10,7 @@ const app = express();
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 // get all orders
 app.get('/api/v1/orders', (req, res) => {
   res.status(200).send({
@@ -18,7 +21,7 @@ app.get('/api/v1/orders', (req, res) => {
 });
 const PORT = 5000;
 
-app.listen(PORT, () => {
+module.exports = app.listen(PORT, () => {
 // console.log(`server running on port ${PORT}`)
 });
 
@@ -111,7 +114,7 @@ app.put('/api/v1/orders/:id', (req, res) => {
 
   return res.status(201).send({
     success: 'true',
-    message: 'order added successfully',
+    message: `order number ${id} updated..`,
     updatedOrder,
   });
 });

@@ -1,5 +1,7 @@
 # F3-project
-#Fast Food Fast app for Andela Bootcamp
+#Fast Food Fast app for Andela Bootcamp  
+[![Build Status](https://travis-ci.org/OceanDiaali/FastFood-Fast.svg?branch=master)](https://travis-ci.org/OceanDiaali/FastFood-Fast)  
+
 ## Application description
  Fast-Food-Fast​ is a food delivery service app for a restaurant.
 ## Features
